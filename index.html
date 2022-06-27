@@ -7,78 +7,92 @@
     <meta name="keywords" content="Ermolin Sergey, cv, resume" />
     <meta name="description" content="Пробный сайт - шаблон Ермолина Сергея." />
     <title>S.E.CV</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <img src="avatar.jpg" width="200" alt="Аватар профиля" />
-    <h1>Сергей Ермолин</h1>
-    <p>
-      Я занимаюсь <strong>web - разработкой</strong> и программированием на
-      <strong>Javascript</strong>.
-    </p>
-    <p>
-      Увлекаюсь <em>астрономией</em>, <em>мотоциклами</em> и
-      <em>путешествиями.</em>
-    </p>
-    <br />
-    <strong> Социальные сети: </strong>
-    <a href="">VK.com</a> | <a href="">Telegram</a> | <a href="">GitHub</a>
-<p> 
-  <h2>Мои хобби</h2>
-  <ul>
 
-    <li>Астрономия</li>
-    <li>Путешествия</li>
-    <li>Мотоциклы</li>
-    <li>Программирование</li>
-    <li>Литературный труд</li>
-  </ul>
-</p>
-<h2>Опыт работы</h2>
-<table>
-  <thead>
-    <tr>
-    <th>Название</th>
-    <th>Должность</th>
-    <th>Год</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>Микос</td>
-    <td>1с - разработчик</td>
-    <td>2021</td>
-  </tr>
-  <tr>
-    <td>1с - бит</td>
-    <td>1с - разработчик</td>
-    <td>2022</td>
-  </tr>
+    <div class="container">
+
+      <div class="info">
+      <img src="avatar.jpg"  alt="Аватар профиля" class="avatar" />
+      <div class="info-text">
+      <h1>Сергей Ермолин</h1>
+      <p>
+        Я занимаюсь <strong>web - разработкой</strong> и программированием на
+        <strong>Javascript</strong>.
+      </p>
+      <p>
+        Увлекаюсь <em>астрономией</em>, <em>мотоциклами</em> и
+        <em>путешествиями.</em>
+      </p>
+      <br />
+      <strong> Социальные сети: </strong>
+      <a href="https://vk.com/ermolin.sergey">VK.com</a> | <a href="https://t.me/StraussJack">Telegram</a> | <a href="https://github.com/StraussJack">GitHub</a>
+    </div>
+    </div>
+  <p> 
+      <div class="card bg-green">
+      <h2>Мои хобби</h2>
+      <ul class="list">
+
+        <li>Астрономия</li>
+        <li>Путешествия</li>
+        <li>Мотоциклы</li>
+        <li>Программирование</li>
+        <li>Литературный труд</li>
+      </ul>
+    </div>
+  </p>
+    <div class="card bg-yellow">
+    <h2>Опыт работы</h2>
+    <table class="table">
+     <!--  <thead>
+        <tr>
+        <th>Название</th>
+        <th>Должность</th>
+        <th>Год</th>
+      </tr>
+      </thead> -->
+      <tbody>
+      <tr>
+        <td>Микос</td>
+        <td>1с - разработчик</td>
+        <td>2021</td>
+      </tr>
+      <tr>
+        <td>1с - бит</td>
+        <td>1с - разработчик</td>
+        <td>2022</td>
+      </tr>
+      
+    </tbody>
+    </table>
+    </div>
   
-</tbody>
-</table>
 
-<h2>Связаться со мной</h2>
+  <form action="/" class="form">
+    <h2>Связаться со мной</h2>
+    <div class="form-row">
 
-<form action="/">
-<div>
-  <label for="name">Ваше имя:</label>
-  <input type="text" id="name" placeholder="Введите имя">
-</div>
-
-
-<div>
-  <label for="email">Ваш e-mail: </label>
-  <input type="email" id="email" placeholder="Введите e-mail">
-</div>
+    <div class="form-group">
+      <label for="name">Ваше имя:</label>
+      <input  type="text" id="name" placeholder="Введите имя">
+    </div>
 
 
-<div>
-  <label for="message">Ваше сообщение </label>
-  <br>
-  <textarea  id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
-</div>
-<input type="submit" value="Отправить">
-</form>
+    <div class="form-group">
+      <label for="email">Ваш e-mail: </label>
+      <input type="email" id="email" placeholder="Введите e-mail">
+    </div>
+  </div>
 
+  <div class="form-group">
+    <label for="message">Ваше сообщение </label>
+  
+    <textarea  id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+  </div>
+  <input class="btn" type="submit" value="Отправить">
+  </form>
+  </div>
   </body>
 </html>
