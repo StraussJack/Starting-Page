@@ -110,6 +110,10 @@ a:visited {
   width: 100%;
 }
 
+.table th {
+  color: black;
+}
+
 .table td {
   padding-bottom: 10px;
 }
@@ -156,7 +160,7 @@ a:visited {
 
 .form-group input,
 .form-group textarea {
-  weight: 100%;
+  width: 100%;
   box-sizing: border-box;
   border: none;
   background: transparent;
